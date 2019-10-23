@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<title>Productivity</title>
+		<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+		<h1>Chris productivity</h1>
+
+		<h3 id="task_info">
+			Current task: none
+		</h3>
+		<h3 id="time_remaining">
+			Time remaining
+		</h3>
+
+		<div id="my_progress">
+			<div id="my_bar"></div>
+		</div>
+		<br>
+
+
+		<div id="add_to_queue">
+			Task name:<br>
+			<input type="text" id="input_name" name="Task name">
+			<br>
+			Estimated time (mins):<br>
+			<input type="text" id="input_time" name="Task time">
+			<div id="entry_error" class="error_text"><br> </div>
+			<input type="button" id="submit_button" value="Add to queue">
+		</div>
+		<br>
+
+		<input type="button" id="add_break_button" value="Add 5 mins break">
+		<br><br><br>
+		<input type="button" class="shaded" id="clear_task" value="Clear current task">
+
+
+		<div id=log>
+			<ul></ul>
+		</p>
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</html>
