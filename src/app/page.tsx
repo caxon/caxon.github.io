@@ -10,7 +10,7 @@ export default function Home() {
             which border software and some other discipline, like
             computer-generated art, or 3d printing.
           </p>
-          <p>for fun I work on bicycles, and rock climb, and draw.</p>
+          <p>For fun I work on bicycles, and rock climb, and draw.</p>
           <p>I&apos;ve previously worked at:</p>
           <ul className="list-disc pl-5">
             <li>

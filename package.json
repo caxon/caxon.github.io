@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && touch ./dist/.nojekyll",
     "start": "next start",
     "lint": "next lint",
-    "upload": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages -d dist -t true"
   },
   "dependencies": {
     "@types/node": "20.5.7",
@@ -22,5 +22,8 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
