@@ -57,7 +57,7 @@ export default function Home() {
         <br /> <br />
         <div>
           <div className="mb-4">
-            And these are some cool people i know with nice websites
+            And these are some cool people I know with nice websites
           </div>
           <ul className="pl-4">
             <li>
