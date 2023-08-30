@@ -1,0 +1,9 @@
+site goals:
+------
+1. contact information
+2. resume
+3. project portfolio
+4. basic bio
+5. site as a portfolio (demonstrate tech)
+6. simple blog
+
