@@ -1,9 +1,28 @@
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const navlinks = [
+  {
+    title: "About Me",
+    slug: "/",
+  },
+  {
+    title: "Projects",
+    slug: "/projects",
+  },
+  {
+    title: "Photography & Art",
+    slug: "/photography",
+  },
+  {
+    title: "Blog",
+    slug: "/blog",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Chris Axon",
@@ -23,16 +42,11 @@ export default function RootLayout({
         <header className="flex bg-gray-200 p-3 pl-4">
           <h1 className="inline-block ">Chris Axon</h1>
           <div className="flex flex-grow flex-row gap-4 justify-end">
-            <Link href={"/"}>About Me</Link>
-            <Link href={"#"}>
-              <s>Projects</s>
-            </Link>
-            <Link href={"#"}>
-              <s>Photography & Art</s>
-            </Link>
-            <Link href={"#"}>
-              <s>Blog</s>
-            </Link>
+            {navlinks.map((l) => (
+              <Link key={l.title} href={l.slug}>
+                {l.title}
+              </Link>
+            ))}
           </div>
         </header>
         <main className="flex-1 mx-auto max-w-7xl sm:px-6 lg:px-8 py-8">
