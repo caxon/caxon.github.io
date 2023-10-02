@@ -1,0 +1,1 @@
+:root{--pipe1-scroll:300px}*{padding:0;margin:0}.main{height:5000px}.pipes1{border:1px solid #000;background-image:url(/bg1.svg);background-size:800px;background-position:top 54px left -60px;filter:blur(14px);position:sticky;top:0;-webkit-user-select:none;-moz-user-select:none;user-select:none;height:100vh;width:100%}.foreground{z-index:2;position:absolute;top:0;height:5000px}
