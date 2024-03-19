@@ -5,9 +5,7 @@ export default function PipesLayout({
 }) {
   return (
     <html className={"h-full"} lang="en">
-      <body>
-        <main>Hello there</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

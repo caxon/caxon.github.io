@@ -10,18 +10,18 @@ const navlinks = [
     title: "About Me",
     slug: "/",
   },
-  {
-    title: "Projects",
-    slug: "/projects",
-  },
-  {
-    title: "Photography & Art",
-    slug: "/photography",
-  },
-  {
-    title: "Blog",
-    slug: "/blog",
-  },
+  // {
+  //   title: "Projects",
+  //   slug: "/projects",
+  // },
+  // {
+  //   title: "Photography & Art",
+  //   slug: "/photography",
+  // },
+  // {
+  //   title: "Blog",
+  //   slug: "/blog",
+  // },
 ];
 
 export const metadata: Metadata = {
@@ -40,7 +40,11 @@ export default function RootLayout({
         className={`min-h-full flex flex-col ${inter.className} bg-gray-50`}
       >
         <header className="flex bg-gray-200 p-3 pl-4">
-          <h1 className="inline-block ">Chris Axon</h1>
+          <h1 className="inline-block">
+            <a href="/">
+              <b>Chris</b> Axon
+            </a>
+          </h1>
           <div className="flex flex-grow flex-row gap-4 justify-end">
             {navlinks.map((l) => (
               <Link key={l.title} href={l.slug}>
@@ -53,7 +57,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="  flex justify-center w-full p-1">
-          <div>2023 or whatever. made with nextjs & tailwind.</div>
+          <div>2024 or whatever. made with nextjs & tailwind.</div>
         </footer>
       </body>
     </html>

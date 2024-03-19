@@ -6,13 +6,21 @@ export default function Home() {
       <div className="flex-1">
         <div className="flex flex-col gap-4">
           <p>
-            Hi, I&apos;m Chris. I do engineering for startups. I like projects
-            which border software and some other discipline, like
-            computer-generated art, or 3d printing.
+            Hi, I&apos;m Chris. I do engineering for startups. Currently
+            I&apos;m working on AI engineering at Harvard.
           </p>
           <p>For fun I work on bicycles, and rock climb, and draw.</p>
           <p>I&apos;ve previously worked at:</p>
           <ul className="list-disc pl-5">
+            <li>
+              Harvard University Research Computing{" "}
+              <a
+                className="text-blue-800 hover:text-red-800"
+                href="https://rc.harvard.edu/"
+              >
+                [link]
+              </a>
+            </li>
             <li>
               Leela{" "}
               <a
